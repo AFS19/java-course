@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String [] args) {
@@ -44,6 +46,64 @@ public class Main {
         // System.out.println("My name is " + name + " and I live at " + address);
 
         // System.out.println("My name is " + name + " and I live at " + address + " and I am " + age + " years old");
+
+        Scanner scanner = new Scanner(System.in);
+
+        /* System.out.print("Enter your name: ");
+
+        String nameInput = scanner.nextLine();
+
+        System.out.print("Enter your age: ");
+
+        int ageInput = scanner.nextInt();
+
+        System.out.print("Enter your gpa: ");
+
+        double gpaInput = scanner.nextDouble();
+
+        System.out.print("Are you a student? (true/false): ");
+
+        boolean isStudent = scanner.nextBoolean();
+
+        System.out.print("Hello " + nameInput);
+        System.out.println(" You are " + ageInput + " years old");
+        System.out.println("Your gpa is " + gpaInput);
+
+        if (isStudent) {
+            System.out.println("You are a student");
+        } else {
+            System.out.println("You are not a student");
+        } */
+
+        // common issues
+
+        /* System.out.print("Enter a number: ");
+        int number = scanner.nextInt();
+        scanner.nextLine(); // sometimes this is needed to ability of the scanner to read the next line
+
+        System.out.print("Enter your favorite color: " );
+        String color = scanner.next();
+
+        System.out.println("Your number is " + number);
+        System.out.println("Your favorite color is " + color); */
+
+        // calculate area of a rectangle
+
+        double width = 0;
+        double height = 0;
+        double area = 0;
+
+        System.out.print("Enter the width: ");
+        width = scanner.nextDouble();
+
+        System.out.print("Enter the height: ");
+        height = scanner.nextDouble();
+
+        area = width * height;
+
+        System.out.println("The area is " + area + " cm");
+
+        scanner.close();
 
     }
 }
